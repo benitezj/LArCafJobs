@@ -1,0 +1,239 @@
+2015-04-09 Walter Lampl <walter.lampl@ cern.ch>
+	* bugfix for runs > 4 samples
+	* tag LArCafJobs-01-00-53
+
+2015-04-06  scott snyder  <snyder@bnl.gov>
+
+	* Tagging LArCafJobs-01-00-52.
+	* src/LArShapeDumper.cxx: Coverity warning fix.
+
+2015-04-01 Walter Lampl <walter.lampl@ cern.ch>
+	* jobO fix for 20.1.4.2
+	* tag LArCafJobs-01-00-51
+
+2015-03-24 Walter Lampl <walter.lampl@ cern.ch>
+	* 64 bit identifier fix
+	* tag LArCafJobs-01-00-50
+
+2015-03-06 Walter Lampl <walter.lampl@ cern.ch>
+	* -mGetLBstoIgnore.py: CONDBR2, simplification, CL-interface
+	* tag LArCafJobs-01-00-49
+
+2015-02-19 Walter Lampl <walter.lampl@ cern.ch>
+	* AMI-tag: Switch to new location of setup script
+	* tag LArCafJobs-01-00-48
+
+2015-02-18 Walter Lampl <walter.lampl@ cern.ch>
+	* several bugfixes
+	* tag LArCafJobs-01-00-47
+
+2015-02-04 Walter Lampl <walter.lampl@ cern.ch>
+	* rename LArCAF_trf.py LArCAF_tf.py
+	* tag LArCafJobs-01-00-46
+
+2015-02-03 Walter Lampl <walter.lampl@ cern.ch>
+	* rewrite merging trf for LArSamplesMon for run2
+	* tag LArCafJobs-01-00-45
+
+2015-01-30 Walter Lampl <walter.lampl@ cern.ch>
+	* more update for run2
+	* tag LArCafJobs-01-00-44
+
+2015-01-29 Walter Lampl <walter.lampl@ cern.ch>
+	* migration to CONDBR2, new transform, etc. (not completed yet)
+	* tag LArCafJobs-01-00-43
+
+2015-01-23 Walter Lampl <walter.lampl@ cern.ch>
+	* remove spurious definition of StatusCode
+	* tag LArCafJobs-01-00-42
+
+2014-12-09  Marcin Nowak  <Marcin.Nowak@cern.ch>
+	* src\LArShapeDumper.cxx: added std:: to ofstream
+	* src\LArQuickHistMerge.cxx: added std:: to ifstream
+	* Tagged as LArCafJobs-01-00-41
+
+2014-12-02  David Quarrie <David.Quarrie@cern.ch>
+	* cmt/requirements
+		Specify the required ROOT components for cmake (transparent to CMT)
+	* Tagged as LArCafJobs-01-00-40
+	
+2014-11-26  scott snyder  <snyder@bnl.gov>
+
+	* Tagging LArCafJobs-01-00-39.
+	* Algorithm -> AthAlgorithm.
+
+2014-11-14 Walter Lampl <walter.lampl@ cern.ch>
+	* coverity and ROOT 6 fixes
+	* tag LArCafJobs-01-00-38
+
+07-11-2014 Pavol Strizenec <pavol @ mail.cern.ch>
+	* migrating to pyAMI 5
+	* tag LArCafJobs-01-00-37
+
+2014-10-22  Vakho Tsulaia  <tsulaia@cern.ch>
+
+	* Migrating to xAOD::EventInfo
+
+2014-03-07  scott snyder  <snyder@bnl.gov>
+
+	* Tagging LArCafJobs-01-00-35.
+	* cmt/requirements: Fix checkreq warning.
+
+04-03-2014 Pavol Strizenec <pavol @ mail.cern.ch>
+	* requirements fix for TriggerInterfaces warning
+	* tag  LArCafJobs-01-00-34
+
+28-02-2014 Pavol Strizenec <pavol @ mail.cern.ch>
+	* fix inclusion of TriggerInterfaces
+	* tag  LArCafJobs-01-00-33
+
+2013-09-17 Walter Lampl <walter.lampl@ cern.ch>
+	* add missing includes
+	* tag LArCafJobs-01-00-32
+
+2013-08-19 Hong Ma <hma@bnl.gov>
+	* Changes for trigger, as per Joerg Stelzer <joerg.stelzer@cern.ch>
+	* tag LArCafJobs-01-00-31
+
+2013-06-11 Walter Lampl
+	* Adapt to new interface of AutoCorr
+	* tag LArCafJobs-01-00-30
+
+2012-09-03 Walter Lampl
+	* Increase robustness of LArQuickHistMerge: Skip input files that can't be read after the 3rd attempt
+	  Fail the job only if the number of skipped files exceeds 5 or 10% of the total number of files.
+	* Tag LArCafJobs-01-00-28
+
+2012-08-02 Walter Lampl <walter.lampl@cern.ch>
+	* LArHistMerge_trf.py: (Attempt to) add DQWebdisplay creation.
+	* tag LArCafJobs-01-00-27
+
+2012-08-02 Walter Lampl <walter.lampl@cern.ch>
+	* GetLBsToIgnore.py: Fix probem in if-else logic (wasn't a race condition).
+	* tag LArCafJobs-01-00-27
+
+2012-08-02 Walter Lampl <walter.lampl@cern.ch>
+	* LArQuickHistMerge: Opening input files is now re-tried up to three times
+	* tag LArCafJobs-01-00-26
+
+2012-08-02 Walter Lampl <walter.lampl@cern.ch>
+	* GetLBsToIgnore.py: Add output to understand possible race conditions with DQM server
+	* tag LArCafJobs-01-00-25
+
+2012-07-17 Walter Lampl <walter.lampl@cern.ch>
+	* add ignoreerror to LArCAF_trf.py
+	* Tag LArCafJobs-01-00-24
+
+2012-07-02  scott snyder  <snyder@bnl.gov>
+
+	* Tagging LArCafJobs-01-00-23.
+	* Coverity warning fixes.
+
+2012-06-06 Walter Lampl <walter.lampl@ cern.ch>
+	* LArHistMerge_trf.py:
+	  - Store list of input files in temporary text file to avoid
+	    a too-long argument list
+	* GetLBsToIgnore.py
+	  - Changes from Benjamin
+	* tag LArCafJobs-01-00-22
+
+2012-05-30 Walter Lampl <walter.lampl@ cern.ch>
+        * LArQuickHistMerge.cxx:
+	  - Gracefully handle empty files and/or no input
+	* LArHistMerge_trf.py:
+	  - Changes for direct castor access
+	* tag LArCafJobs-01-00-21
+
+2012-05-15 Walter Lampl <walter.lampl@ cern.ch>
+        * LArHistMerge_trf.py:
+	  - Use TFile::Open instead of constructor (can read from castor)
+	  - Allow a histogram exclusion list
+	* tag LArCafJobs-01-00-20
+
+2012-05-11 Walter Lampl <walter.lampl@ cern.ch>
+	* LArHistMerge_trf.py: Better file-name parsing to get run and lumi block number
+	* tag LArCafJobs-01-00-19
+
+2012-05-10 Walter Lampl <walter.lampl@ cern.ch>
+	* Protect GetLBsToIgnore.py against invalid run number
+	* Add histmerge step to UploadAMITag_larcaf.py
+	* tag LArCafJobs-01-00-18
+	
+2012-05-09 Walter Lampl <walter.lampl@ cern.ch>
+	* Add trf for LArQuickHistMerge
+	* tag LArCafJobs-01-00-17
+
+2012-04-23 Walter Lampl <walter.lampl@ cern.ch>
+	* LArQuickHistMerge: Fix coverity complain.
+	* tag LArCafJobs-01-00-16
+
+2012-04-04 Walter Lampl <walter.lampl @cern.ch>
+	* LArQuickHistMerge:
+	  - Protection against invalid histogram ptr in write method
+	  - Add merging method 'lowerLB'
+	  - Some output cosmetics
+	* tag LArCafJobs-01-00-15
+
+2012-02-07 Nicolas Berger (Nicolas.Berger@cern.ch)
+	* Take errors into account when computing axis limits
+
+2012-02-02 Nicolas Berger (Nicolas.Berger@cern.ch)
+	* Try to dump disconnected channels also when dumping all channels
+	* More fixes to geometry: phi initial positions and eta ranges, number of channels in FCAL
+	* remove historical use of std::string : switch to TStrings for consistency with rest of code
+	* tag LArCafJobs-01-00-14
+
+2012-01-20 Nicolas Berger (Nicolas.Berger@cern.ch)
+	* Fix Geometry class : wrong phi granularity in barrel-end and missing first strip
+	* restore Tool and Algorithm declarations in components/
+	* tag LArCafJobs-01-00-13
+
+2012-01-16 Nicolas Berger (Nicolas.Berger@cern.ch)
+	* fix typo in previous change
+	* tag LArCafJobs-01-00-12
+
+2012-01-16 Nicolas Berger (Nicolas.Berger@cern.ch)
+	* Work around ROOT automatically changing the basket size, which creates problems when rereading
+	* tag LArCafJobs-01-00-11
+
+2012-01-16 Nicolas Berger (Nicolas.Berger@cern.ch)
+	* Work around ROOT automatically changing the basket size, which creates problems when rereading
+	* tag LArCafJobs-01-00-11
+
+2011-12-08  J Tseng
+	* minor 64-bit identifier patch
+	* tag LArCafJobs-01-00-10
+
+2011-12-05  scott snyder  <snyder@bnl.gov>
+
+	* src/LArQuickHistMerge.cxx: Fix c++11 compilation.
+	* tag LArCafJobs-01-00-09
+
+2011-12-02  scott snyder  <snyder@bnl.gov>
+
+	* Fix coverity warnings.
+	* tag LArCafJobs-01-00-08
+
+2011-11-25 Nicolas Berger (Nicolas.Berger@cern.ch)
+	* Remove test code, add printouts
+	* tag LArCafJobs-01-00-07
+
+2011-11-24 Nicolas Berger (Nicolas.Berger@cern.ch)
+	* Modify LArMerge_trf.py to use dataset names
+	* tag LArCafJobs-01-00-06
+
+2011-11-22 Nicolas Berger (Nicolas.Berger@cern.ch)
+	* Add runargs functionalities that were already implemented on the CAF but not tagged
+	* tag LArCafJobs-01-00-05
+
+2011-11-15 Nicolas Berger (Nicolas.Berger@cern.ch)
+	* Clean up requirements, following recommendations of checkreq.py script
+	* add a declare_jobtransforms entry for the merging transform
+	* fix dependency problem between LArQuickMerge and the library
+	* tag LArCafJobs-01-00-03
+
+2011-11-14 Walter Lampl
+	* Add 'declare_jobtransforms' to requirements to make LArCAF_trf.py command-line executable
+	* Add executable "LArQuickHistMerge" 
+	* tag LArCafJobs-01-00-02
+	
